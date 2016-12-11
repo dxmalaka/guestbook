@@ -1,0 +1,13 @@
+---
+pipeline: "workflows/php/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
+buildName: "guestbook"
+codeReview: false
+links:
+  Git: "https://github.com/dxmalaka/guestbook.git"
+  Job: "http://jenkins.f8.35.161.179.42.xip.io/job/guestbook"
+  Production: "http://10.200.77.25:80/kubernetes/pods?namespace=f8-production"
+  Staging: "http://10.200.77.25:80/kubernetes/pods?namespace=f8-staging"
+environments:
+  Staging: "f8-staging"
+  Production: "f8-production"
+useLocalFlow: true
